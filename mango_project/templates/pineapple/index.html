@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+  <head>
+    <title>Welcome to Pineapple</title>
+  </head>
+
+  <body>
+    <h1>Pineapple says...</h1>
+    <div>
+      We Welcome You <br />
+
+<strong>{{ boldmessage }}</strong><br />
+    </div>
+    <div>
+
+<a href="/pineapple">Home</a><br />
+          <img src="{% static "images/Pineapple-Fruit.jpg" %}"
+                alt="Picture of Pineapple" />
+    </div>
+  </body>
+
+</html>

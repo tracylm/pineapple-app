@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+  <head>
+    <title>Learn About Pineapple</title>
+  </head>
+
+  <body>
+    <h1>Pineapple is a bright and intelligent fruit.</h1>
+    <div>
+      Hi there sunshine! <br />
+      <p> The pineapple (<i>Ananas comosus</i>) is a tropical plant with an edible
+      multiple fruit consisting of coalesced berries, also called pineapples,
+      and the most economically significant plant in the Bromeliaceae family.
+      Pineapples may be cultivated from a crown cutting of the fruit, possibly
+      flowering in 5-10 months and fruiting in the following six months.
+      Pineapples do not ripen significantly after harvest. Pineapples can be
+      consumed fresh, cooked, juiced, or preserved.</p>
+
+<strong>{{ boldmessage2 }}</strong><br />
+    </div>
+    <div>
+
+    <a href="/pineapple/about">About</a><br />
+              <img src="{% static "images/smoothie.jpg" %}"
+                    alt="Picture of pineapple smoothie" />
+    </div>
+  </body>
+<footer>This template has been put together by <a href="http://www.tracylm.com">Tracy Murray</a>.</footer>
+</html>
