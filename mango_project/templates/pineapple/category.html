@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pineapple</title>
+</head>
+<body>
+  <div>
+  {% if category %}
+    <h1>{{ category.name }}</h1>
+    {% if pages %}
+      <ul>
+      {% for page in pages %}
+      <!-- Nothing is appearing within the page.url variable
+      Page DOES have a url! I can see it in the python shell!
+    -->
+
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <strong>No pages currently in this category.</strong>
+    {% endif %}
+  {% else %}
+    Sorry, the specified category does not exist.
+  {% endif %}
+  </div>
+</body>
+</html>
