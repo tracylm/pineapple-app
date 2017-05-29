@@ -22,7 +22,35 @@
     {% else %}
       <strong>There are no categories present.</strong>
     {% endif %}
-  </div>
+
+    <div>
+    <h2>Most Liked Categories</h2>
+    {% if categories %}
+    <ul>
+      {% for category in categories %}
+      <!-- But these are not in order -->
+      <li><a href="/pineapple/category/{{ category.slug }}">{{ category.name }}</a></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <strong>There are no categories present.</strong>
+    {% endif %}
+    </div>
+
+    <div>
+    <h2>Most Viewed Pages</h2>
+    {% if pages %}
+    <ul>
+      {% for page in pages %}
+      <li>{{ page.title }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <strong>Even though they are there, we are unable to locate the pages
+      at this time.</strong>
+    {% endif %}
+    </div>
+    <br />
 
   <div>
     <a href="/pineapple/about">About Pineapple</a><br />

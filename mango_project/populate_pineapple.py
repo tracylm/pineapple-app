@@ -33,9 +33,7 @@ def populate():
         "url": "http://bottlepy.org/docs/dev/"},
         {"title": "Flask",
         "url": "http://flask.pocoo.org"}]
-    # These are the categories. But where are their urls?
-    # Python should be using the pages of the python pages of the key:value pair?
-    # No - these are DICTIONARIES. 
+    
     cats =  {"Python": {"pages": python_pages},
              "Django": {"pages": django_pages},
              "Other Frameworks": {"pages": other_pages} }
