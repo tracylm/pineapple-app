@@ -60,7 +60,9 @@ ROOT_URLCONF = 'mango_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR,],
+        # Should below be blank?
+        'DIRS': [TEMPLATE_DIR, ],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,9 +127,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR,]
+STATICFILES_DIRS = [STATIC_DIR, ]
 
 # Media files
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+print(__file__)
+print(os.path.dirname(__file__))
+print(os.path.dirname(os.path.dirname(__file__)))

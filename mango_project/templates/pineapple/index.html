@@ -15,13 +15,14 @@
     <ul>
       {% for category in categories %}
       <li>
-      <a href="/pineapple/category/{{ category.slug }}">{{ category.name }}</a>
+        <a href="/pineapple/category/{{ category.slug }}">{{ category.name }}</a>
       </li>
       {% endfor %}
     </ul>
     {% else %}
-      <strong>There are no categories present.</strong>
+        <strong>There are no categories present.</strong>
     {% endif %}
+    </div>
 
     <div>
     <h2>Most Liked Categories</h2>
@@ -54,8 +55,9 @@
 
   <div>
     <a href="/pineapple/about">About Pineapple</a><br />
-    <img src="{% static "images/Pineapple-Fruit.jpg" %}"
-    alt="Picture of Pineapple" />
+    <a href="/pineapple/add_category">Add Category</a><br />
+    <a href="/pineapple/add_page">Add Page</a><br />
+    <img src="{% static "images/Pineapple-Fruit.jpg" %}" alt="Picture of Pineapple" />
   </div>
 </body>
 </html>
